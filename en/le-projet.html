@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The project — La Maison des Livreurs Strasbourg</title>
-<meta name="description" content="Why a Maison des Livreurs in Strasbourg, the project&#x27;s milestones, the national network of Maisons and press coverage.">
+<meta name="description" content="The issue, our response, the 2027-2029 budget, the funding plan, governance and impact of the Maison des Livreurs in Strasbourg.">
 <link rel="canonical" href="https://maisondeslivreurs-strasbourg.github.io/en/le-projet.html">
 <link rel="alternate" hreflang="fr" href="https://maisondeslivreurs-strasbourg.github.io/le-projet.html">
 <link rel="alternate" hreflang="en" href="https://maisondeslivreurs-strasbourg.github.io/en/le-projet.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_GB">
 <meta property="og:title" content="The project — La Maison des Livreurs Strasbourg">
-<meta property="og:description" content="Why a Maison des Livreurs in Strasbourg, the project&#x27;s milestones, the national network of Maisons and press coverage.">
+<meta property="og:description" content="The issue, our response, the 2027-2029 budget, the funding plan, governance and impact of the Maison des Livreurs in Strasbourg.">
 <meta property="og:url" content="https://maisondeslivreurs-strasbourg.github.io/en/le-projet.html">
 <meta property="og:image" content="https://maisondeslivreurs-strasbourg.github.io/logo-mdl.png">
 <meta name="theme-color" content="#1211CA">
@@ -288,6 +288,22 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
   .teaser{padding:26px}
 }
 [dir="rtl"] .page-house{right:auto;left:0}
+/* v8 : page projet (budget, chiffres clés) */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.fact{padding:22px 24px;border-radius:18px;background:#FFFFFF;border:1px solid #E2E4F2;display:flex;flex-direction:column;gap:6px}
+.budget-wrap{overflow-x:auto;border:1px solid #E2E4F2;border-radius:18px;background:#FFFFFF}
+.budget{width:100%;min-width:660px;border-collapse:collapse;font-size:16px}
+.budget th,.budget td{padding:13px 18px;text-align:end;border-bottom:1px solid #ECECF2;white-space:nowrap;font-variant-numeric:tabular-nums}
+.budget th[scope="row"],.budget thead th:first-child{text-align:start;white-space:normal;font-weight:400}
+.budget thead th{background:#F5F6FC;font-weight:700;font-size:15px;color:#4A4A5E}
+.budget tfoot th,.budget tfoot td{font-weight:800;background:#1211CA;color:#FFFFFF;border-bottom:0}
+.budget tfoot th[scope="row"]{font-weight:800}
+.pill-note{display:flex;gap:14px;align-items:flex-start;padding:22px 24px;border-radius:18px;background:#FFF6E0;border:1px solid #F8D98A}
+  .mob-only{display:none}
+[dir="rtl"] .budget td{direction:ltr;text-align:left}
+@media (max-width: 640px){.mob-only{display:block}}
+@media (max-width: 1024px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width: 640px){.fact{padding:18px}.budget{font-size:15px}}
 
 [hidden]{display:none !important}
 .tab{min-height:46px;padding:0 22px;border:0;border-radius:999px;background:transparent;color:#4A4A5E;font:inherit;font-weight:700;cursor:pointer}
@@ -316,8 +332,7 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     <div class="mdl-progress" aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: #F8B014"></div>
     <nav aria-label="Main navigation" class="wrap" style="padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
       <a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #14142B; text-decoration: none">
-        <img src="../logo-mdl.png" alt="La Maison des Livreurs Strasbourg logo" style="width: 48px; height: 48px; display: block">
-        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 17px; line-height: 1.1">La Maison<br>des Livreurs</span>
+        <img src="../logo-mdl-horizontal.svg" alt="La Maison des Livreurs Strasbourg logo" width="156" height="46" style="height: 46px; width: auto; display: block">
       </a>
       <div class="navlinks" style="align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
         <div class="dd">
@@ -333,8 +348,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <div class="dd">
           <a href="#top" class="mdl-navlink is-current" aria-current="page"><span>The project</span><svg aria-hidden="true" class="dd-ico" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"></path></svg></a>
           <div class="dd-menu">
-            <a href="#pourquoi" data-sub="pourquoi">Why a house</a>
-            <a href="#etapes" data-sub="etapes">Where we are now</a>
+            <a href="#pourquoi" data-sub="pourquoi">The issue</a>
+            <a href="#reponse" data-sub="reponse">Our response</a>
+            <a href="#modele" data-sub="modele">Budget and funding</a>
+            <a href="#impact" data-sub="impact">Governance and impact</a>
+            <a href="#etapes" data-sub="etapes">Timeline</a>
             <a href="#maisons" data-sub="maisons">The Maisons across France</a>
             <a href="#presse" data-sub="presse">In the press</a>
           </div>
@@ -361,8 +379,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     </nav>
     <div class="subnav is-hidden" id="subnav">
       <nav aria-label="Page sections" class="subnav-track" id="subnav-track">
-        <a href="#pourquoi" data-spy="pourquoi" class="chip">Why a house</a>
-        <a href="#etapes" data-spy="etapes" class="chip">Where we are now</a>
+        <a href="#pourquoi" data-spy="pourquoi" class="chip">The issue</a>
+        <a href="#reponse" data-spy="reponse" class="chip">Our response</a>
+        <a href="#modele" data-spy="modele" class="chip">Budget and funding</a>
+        <a href="#impact" data-spy="impact" class="chip">Governance and impact</a>
+        <a href="#etapes" data-spy="etapes" class="chip">Timeline</a>
         <a href="#maisons" data-spy="maisons" class="chip">The Maisons across France</a>
         <a href="#presse" data-spy="presse" class="chip">In the press</a>
       </nav>
@@ -378,8 +399,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
           <a href="index.html#rencontrer" class="mm-sub">Meet us</a>
           <a href="index.html#faq" class="mm-sub">Questions</a>
           <a href="#top" class="mm-title">The project</a>
-          <a href="#pourquoi" class="mm-sub">Why a house</a>
-          <a href="#etapes" class="mm-sub">Where we are now</a>
+          <a href="#pourquoi" class="mm-sub">The issue</a>
+          <a href="#reponse" class="mm-sub">Our response</a>
+          <a href="#modele" class="mm-sub">Budget and funding</a>
+          <a href="#impact" class="mm-sub">Governance and impact</a>
+          <a href="#etapes" class="mm-sub">Timeline</a>
           <a href="#maisons" class="mm-sub">The Maisons across France</a>
           <a href="#presse" class="mm-sub">In the press</a>
           <a href="s-engager.html" class="mm-title">Get involved</a>
@@ -401,16 +425,16 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 20px">
       <svg aria-hidden="true" class="page-house" viewBox="0 0 200 160" fill="none"><path class="mdl-house" pathLength="1" filter="url(#mdl-chalk)" vector-effect="non-scaling-stroke" d="M30 70 10 70 100 10 132 34 132 18 152 18 152 48 190 70 170 70 170 150 30 150Z" stroke="#1211CA" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"></path></svg>
       <p class="eyebrow mdl-in p1"><span>The project</span></p>
-      <h1 class="mdl-in p2" style="margin: 0; max-width: 880px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.03; letter-spacing: -.025em">A house for Strasbourg's delivery riders, built with them.</h1>
-      <p class="mdl-in p3" style="margin: 0; max-width: 640px; font-size: 20px; color: #4A4A5E">Why this space, where the project stands, the Maisons that inspire us and what the press says.</p>
-      <div class="grp-links mdl-in p4"><a href="#pourquoi">Why a house</a><a href="#etapes">Where we are now</a><a href="#maisons">The Maisons across France</a><a href="#presse">In the press</a></div>
+      <h1 class="mdl-in p2" style="margin: 0; max-width: 900px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.03; letter-spacing: -.025em">A resource centre for app-based delivery riders, built with them.</h1>
+      <p class="mdl-in p3" style="margin: 0; max-width: 700px; font-size: 20px; color: #4A4A5E">A Strasbourg association registered in September 2026, supported by the Labo des partenariats and part of the national network of Maisons des Livreurs. The space is set to open in March 2027.</p>
+      <div class="grp-links mdl-in p4"><a href="#pourquoi">The issue</a><a href="#reponse">Our response</a><a href="#modele">Budget and funding</a><a href="#impact">Governance and impact</a><a href="#etapes">Timeline</a><a href="#maisons">The Maisons across France</a><a href="#presse">In the press</a></div>
     </div>
   </section>
 
   <!-- ===== POURQUOI ===== -->
   <section id="pourquoi" class="sec">
     <div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
-      <p class="eyebrow mdl-reveal"><span>Why a house?</span></p>
+      <p class="eyebrow mdl-reveal"><span>The issue</span></p>
       <p class="mdl-fill" style="margin: 0; max-width: 1040px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(28px, 4vw, 54px); line-height: 1.14; letter-spacing: -.02em">They deliver our meals in all weathers, seven days a week. Between two orders, they have nowhere to shelter, rest or be heard. So we are building with them a house that belongs to them.</p>
       <div style="display: flex; flex-direction: column; gap: 28px">
         <p class="mdl-reveal" style="margin: 0; font-size: 15px; font-weight: 700; color: #5E5E72">What the SANTÉ-COURSE study shows</p>
@@ -434,14 +458,171 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         </div>
         <p style="margin: 0; font-size: 15px; color: #5E5E72"><span>Source:</span> <a href="https://www.medecinsdumonde.org/app/uploads/2026/03/Rapport_SANTE-COURSE.pdf" target="_blank" rel="noopener" style="font-weight: 700">SANTÉ-COURSE report</a><span>, Médecins du Monde · IRD · INED (2026), a survey of more than 1,000 riders in Paris and Bordeaux.</span></p>
       </div>
+      <div class="split mdl-reveal" style="align-items: start">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(26px, 3vw, 38px); line-height: 1.1">And in Strasbourg?</h2>
+          <ul style="margin: 0; padding-inline-start: 22px; display: flex; flex-direction: column; gap: 10px; color: #4A4A5E">
+            <li>Several thousand rider accounts are active in the Strasbourg metropolitan area, yet there is no space dedicated to them.</li>
+            <li>Many of them live in the city's priority neighbourhoods: Neuhof, Meinau, Koenigshoffen, Rotterdam, Citadelle…</li>
+            <li>Some riders are deactivated by the apps even though they hold a valid receipt for their residence permit renewal: overnight, they lose all income.</li>
+          </ul>
+        </div>
+        <div class="card-pad" style="padding: 28px; border-radius: 22px; background: #F5F6FC; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #1211CA">The key study</p>
+          <p style="margin: 0; color: #4A4A5E">The SANTÉ-COURSE survey interviewed 1,004 riders face to face, in five languages. The Paris and Bordeaux Maisons des Livreurs were partners. Nearly six in ten riders report experiencing discrimination at work.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== ÉTAPES ===== -->
-  <section id="etapes" class="sec sec-green">
+  <!-- ===== NOTRE RÉPONSE ===== -->
+  <section id="reponse" class="sec sec-blue">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+      <div class="head mdl-reveal">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+          <p class="eyebrow"><span>Our response</span></p>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">One place, six missions, specialist partners.</h2>
+        </div>
+        <p style="flex: 1 1 320px; margin: 0; max-width: 440px; color: #4A4A5E">Open to all riders, whatever the app, free and unconditional. Everyone finds shelter, answers and a place to take action.</p>
+      </div>
+      <div class="g3">
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">01</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">Welcome</h3>
+          <p style="margin: 0; color: #4A4A5E">A space to rest and meet: coffee, toilets, phone and battery charging, with opening hours that fit delivery shifts.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">02</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">Access your rights</h3>
+          <p style="margin: 0; color: #4A4A5E">Paperwork, account deactivations, digital documents, with Reconnect and its digital safe.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">03</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">Look after your health</h3>
+          <p style="margin: 0; color: #4A4A5E">Health drop-ins and interpreting with Migrations Santé Alsace, which also trains the team and volunteers.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">04</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">Speak French, find what's next</h3>
+          <p style="margin: 0; color: #4A4A5E">French practice and guidance towards jobs and training with Tunaweza.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">05</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">Repair and ride safely</h3>
+          <p style="margin: 0; color: #4A4A5E">A self-repair workshop suited to e-bikes, plus road safety.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">06</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">Raise awareness and speak out</h3>
+          <p style="margin: 0; color: #4A4A5E">A charter for restaurants, film debates, field data and advocacy with the national network.</p>
+        </article>
+      </div>
+      <div class="facts">
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">100</span><span style="color: #4A4A5E; font-size: 16px">riders welcomed in the first year (target)</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">1 → 2</span><span style="color: #4A4A5E; font-size: 16px">paid staff positions between 2027 and 2029</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">10</span><span style="color: #4A4A5E; font-size: 16px">volunteers already on board</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">3</span><span style="color: #4A4A5E; font-size: 16px">specialist partners under agreement</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUDGET ET FINANCEMENT ===== -->
+  <section id="modele" class="sec">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 44px">
+      <div class="head mdl-reveal">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+          <p class="eyebrow"><span>Budget and funding</span></p>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">A lean budget, diverse funding.</h2>
+        </div>
+        <p style="flex: 1 1 320px; margin: 0; max-width: 440px; color: #4A4A5E">The space stays free for riders. The project relies on foundations, public grants, corporate sponsorship and, over time, its own income.</p>
+      </div>
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">Projected budget 2027-2029</h3>
+        <div class="budget-wrap">
+          <table class="budget">
+            <caption class="sr">Projected project budget, in euros, per year</caption>
+            <thead><tr><th scope="col">Expenses</th><th scope="col">2027</th><th scope="col">2028</th><th scope="col">2029</th><th scope="col">Total</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Salaries (1, then 1.5, then 2 FTE*)</th><td>41&#160;500&#160;€</td><td>62&#160;250&#160;€</td><td>83&#160;000&#160;€</td><td>186&#160;750&#160;€</td></tr>
+              <tr><th scope="row">Rent, utilities and insurance</th><td>25&#160;900&#160;€</td><td>31&#160;200&#160;€</td><td>33&#160;300&#160;€</td><td>90&#160;400&#160;€</td></tr>
+              <tr><th scope="row">Partner agreements</th><td>20&#160;000&#160;€</td><td>20&#160;000&#160;€</td><td>20&#160;000&#160;€</td><td>60&#160;000&#160;€</td></tr>
+              <tr><th scope="row">Supplies, workshop, energy, contingency</th><td>16&#160;700&#160;€</td><td>19&#160;900&#160;€</td><td>21&#160;200&#160;€</td><td>57&#160;800&#160;€</td></tr>
+              <tr><th scope="row">Communication, advocacy, travel</th><td>15&#160;600&#160;€</td><td>16&#160;600&#160;€</td><td>18&#160;200&#160;€</td><td>50&#160;400&#160;€</td></tr>
+              <tr><th scope="row">Investment: fit-out, furniture, tools</th><td>46&#160;000&#160;€</td><td>6&#160;000&#160;€</td><td>6&#160;000&#160;€</td><td>58&#160;000&#160;€</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Project total</th><td>165&#160;700&#160;€</td><td>155&#160;950&#160;€</td><td>181&#160;700&#160;€</td><td>503&#160;350&#160;€</td></tr></tfoot>
+          </table>
+        </div>
+        <p class="mob-only" style="margin: 0; font-size: 14px; font-weight: 700; color: #1211CA">Swipe the table to see every year.</p>
+        <p style="margin: 0; font-size: 15px; color: #5E5E72">* FTE: full-time equivalent. Balanced budget every year, submitted to the Fondation de France in September 2026. 2027 includes fitting out the premises.</p>
+      </div>
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">The funding plan</h3>
+        <div class="g2">
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">Foundations</h3>
+          <p style="margin: 0; color: #4A4A5E">The Fondation de France has been asked for €50,000 a year over three years. Other corporate foundations are being approached.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">Local authorities and the State</h3>
+          <p style="margin: 0; color: #4A4A5E">Contrat de ville 2027 (State and Eurométropole), City and Eurométropole under the social and solidarity economy, European Collectivity of Alsace, FDVA.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">Own income</h3>
+          <p style="margin: 0; color: #4A4A5E">Memberships, a bike workshop with solidarity pricing open to all, then training: a share that grows every year.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">In-kind contributions</h3>
+          <p style="margin: 0; color: #4A4A5E">Volunteering, loaned rooms, donated equipment: €100,000 of contributions valued over three years, on top of the budget.</p>
+        </article>
+        </div>
+      </div>
+      <div class="pill-note mdl-reveal">
+        <span aria-hidden="true" style="flex: 0 0 34px; width: 34px; height: 34px; border-radius: 50%; background: #F8B014; color: #14142B; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800">!</span>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <p style="margin: 0; font-weight: 700">Where does funding stand? (October 2026)</p>
+          <p style="margin: 0; color: #4A4A5E">No funding has been secured yet. Hiring and opening the space depend on answers expected by the end of the year. Meanwhile, the volunteer team carries on with the groundwork: fixed costs only start once the space opens.</p>
+        </div>
+      </div>
+      <p class="mdl-reveal" style="margin: 0; max-width: 820px; color: #4A4A5E"><strong>Our rule:</strong> any funding from a delivery app or a company is governed by an ethics charter, with no branding in return and no say over our work.</p>
+      <a href="mailto:lamaisondeslivreurs.strasbourg@gmail.com?subject=Dossier%20de%20pr%C3%A9sentation" class="mdl-btn mdl-reveal" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #1211CA; color: #FFFFFF; font-weight: 700; text-decoration: none">Get our presentation pack</a>
+    </div>
+  </section>
+
+  <!-- ===== GOUVERNANCE ET IMPACT ===== -->
+  <section id="impact" class="sec sec-green">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 44px">
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+        <p class="eyebrow"><span>Governance and impact</span></p>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">Governed with riders, evaluated with our partners.</h2>
+      </div>
+      <div class="g2" style="gap: 18px">
+        <div class="card-pad mdl-reveal" style="padding: 32px; border-radius: 22px; background: #FFFFFF; border: 1px solid #CFE8DC; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">Governance</h3>
+          <p style="margin: 0; color: #3E4A44">An association under Alsace-Moselle local law, registered with the Strasbourg court. A collective board and two voting groups: riders and other members. Partner organisations sit in an advisory group.</p>
+          <p style="margin: 0; color: #3E4A44">Supported by the Labo des partenariats (Start-Up de Territoire programme), working with CoopCycle-Association and the national network of Maisons des Livreurs.</p>
+        </div>
+        <div class="card-pad mdl-reveal" style="padding: 32px; border-radius: 22px; background: #FFFFFF; border: 1px solid #CFE8DC; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">What we measure</h3>
+          <ul style="margin: 0; padding-inline-start: 20px; display: flex; flex-direction: column; gap: 6px; color: #3E4A44">
+            <li>riders welcomed and supported, including the share living in priority neighbourhoods;</li>
+            <li>successful rights procedures, referrals to care, jobs or training;</li>
+            <li>repairs carried out at the workshop;</li>
+            <li>riders involved in decisions and in running the space;</li>
+            <li>volunteers trained and hours given;</li>
+            <li>restaurants signing the charter and people reached by awareness work.</li>
+          </ul>
+          <p style="margin: 0; color: #3E4A44">A joint review every year with riders, partners and funders. The figures also feed into the network's advocacy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALENDRIER ===== -->
+  <section id="etapes" class="sec">
     <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 56px">
       <div class="mdl-reveal" style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 18px">
-        <p class="eyebrow"><span>Where are we now?</span></p>
+        <p class="eyebrow"><span>Timeline</span></p>
         <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 54px); line-height: 1.04; letter-spacing: -.02em">The house is already being built, brick by brick.</h2>
         <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-top: 10px">
           <div>
@@ -463,12 +644,17 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">September 2026</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">Registered on the Strasbourg register of associations</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">Registered as an association and application submitted to the Fondation de France</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">September – October 2026</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">First Riders' Cafés</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">First three Riders' Cafés</p>
+        </li>
+        <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
+          <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">November 2026</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">Contrat de ville 2027 application and Fondation de France decision expected</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
@@ -478,12 +664,12 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">January 2027</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">A paid coordinator joins the team</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">Hiring a coordinator, if funding is confirmed</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 0 30px">
           <span aria-hidden="true" class="tl-dot big" style="position: absolute; left: -12px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #F8B014; box-shadow: 0 0 0 5px rgba(248,176,20,.25)"></span>
-          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">Spring 2027</p>
-          <p style="margin: 2px 0 0; font-size: 24px; font-weight: 700">Our space opens</p>
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">March 2027</p>
+          <p style="margin: 2px 0 0; font-size: 24px; font-weight: 700">Opening of the space (target)</p>
         </li>
       </ol>
     </div>
@@ -657,7 +843,7 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     l.addEventListener('keydown',function(e){if(e.key==='Escape'){l.removeAttribute('open');l.querySelector('summary').focus();}});
   });
   var links=d.querySelectorAll('[data-spy],[data-sub]'), track=d.getElementById('subnav-track'), subnav=d.getElementById('subnav'), top=d.getElementById('totop');
-  var SECTIONS=["pourquoi", "etapes", "maisons", "presse"];
+  var SECTIONS=["pourquoi", "reponse", "modele", "impact", "etapes", "maisons", "presse"];
   function setActive(id){
     links.forEach(function(a){var on=(a.getAttribute('data-spy')||a.getAttribute('data-sub'))===id;a.classList.toggle('is-active',on);if(a.hasAttribute('data-spy')){if(on){a.setAttribute('aria-current','true');}else{a.removeAttribute('aria-current');}}});
     var chip=track&&track.querySelector('[data-spy="'+id+'"]');
