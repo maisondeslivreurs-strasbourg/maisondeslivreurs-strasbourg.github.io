@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>پروژه — La Maison des Livreurs ستراسبورګ</title>
-<meta name="description" content="ولې په ستراسبورګ کې د رسوونکو کور، د پروژې پړاوونه، د کورونو ملي شبکه او د رسنیو بیاکتنه.">
+<meta name="description" content="اوسنی حالت، زموږ ځواب، د 2027-2029 بودیجه، د تمویل پلان، اداره او په ستراسبورګ کې د رسوونکو د کور اغېز.">
 <link rel="canonical" href="https://maisondeslivreurs-strasbourg.github.io/ps/le-projet.html">
 <link rel="alternate" hreflang="fr" href="https://maisondeslivreurs-strasbourg.github.io/le-projet.html">
 <link rel="alternate" hreflang="en" href="https://maisondeslivreurs-strasbourg.github.io/en/le-projet.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ps_AF">
 <meta property="og:title" content="پروژه — La Maison des Livreurs ستراسبورګ">
-<meta property="og:description" content="ولې په ستراسبورګ کې د رسوونکو کور، د پروژې پړاوونه، د کورونو ملي شبکه او د رسنیو بیاکتنه.">
+<meta property="og:description" content="اوسنی حالت، زموږ ځواب، د 2027-2029 بودیجه، د تمویل پلان، اداره او په ستراسبورګ کې د رسوونکو د کور اغېز.">
 <meta property="og:url" content="https://maisondeslivreurs-strasbourg.github.io/ps/le-projet.html">
 <meta property="og:image" content="https://maisondeslivreurs-strasbourg.github.io/logo-mdl.png">
 <meta name="theme-color" content="#1211CA">
@@ -288,6 +288,22 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
   .teaser{padding:26px}
 }
 [dir="rtl"] .page-house{right:auto;left:0}
+/* v8 : page projet (budget, chiffres clés) */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.fact{padding:22px 24px;border-radius:18px;background:#FFFFFF;border:1px solid #E2E4F2;display:flex;flex-direction:column;gap:6px}
+.budget-wrap{overflow-x:auto;border:1px solid #E2E4F2;border-radius:18px;background:#FFFFFF}
+.budget{width:100%;min-width:660px;border-collapse:collapse;font-size:16px}
+.budget th,.budget td{padding:13px 18px;text-align:end;border-bottom:1px solid #ECECF2;white-space:nowrap;font-variant-numeric:tabular-nums}
+.budget th[scope="row"],.budget thead th:first-child{text-align:start;white-space:normal;font-weight:400}
+.budget thead th{background:#F5F6FC;font-weight:700;font-size:15px;color:#4A4A5E}
+.budget tfoot th,.budget tfoot td{font-weight:800;background:#1211CA;color:#FFFFFF;border-bottom:0}
+.budget tfoot th[scope="row"]{font-weight:800}
+.pill-note{display:flex;gap:14px;align-items:flex-start;padding:22px 24px;border-radius:18px;background:#FFF6E0;border:1px solid #F8D98A}
+  .mob-only{display:none}
+[dir="rtl"] .budget td{direction:ltr;text-align:left}
+@media (max-width: 640px){.mob-only{display:block}}
+@media (max-width: 1024px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width: 640px){.fact{padding:18px}.budget{font-size:15px}}
 
 [hidden]{display:none !important}
 .tab{min-height:46px;padding:0 22px;border:0;border-radius:999px;background:transparent;color:#4A4A5E;font:inherit;font-weight:700;cursor:pointer}
@@ -316,8 +332,7 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     <div class="mdl-progress" aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: #F8B014"></div>
     <nav aria-label="اصلي مینو" class="wrap" style="padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
       <a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #14142B; text-decoration: none">
-        <img src="../logo-mdl.png" alt="د La Maison des Livreurs ستراسبورګ نښه" style="width: 48px; height: 48px; display: block">
-        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 17px; line-height: 1.1">La Maison<br>des Livreurs</span>
+        <img src="../logo-mdl-horizontal.svg" alt="د La Maison des Livreurs ستراسبورګ نښه" width="156" height="46" style="height: 46px; width: auto; display: block">
       </a>
       <div class="navlinks" style="align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
         <div class="dd">
@@ -333,8 +348,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <div class="dd">
           <a href="#top" class="mdl-navlink is-current" aria-current="page"><span>پروژه</span><svg aria-hidden="true" class="dd-ico" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"></path></svg></a>
           <div class="dd-menu">
-            <a href="#pourquoi" data-sub="pourquoi">ولې یو کور</a>
-            <a href="#etapes" data-sub="etapes">موږ چېرته یو</a>
+            <a href="#pourquoi" data-sub="pourquoi">اوسنی حالت</a>
+            <a href="#reponse" data-sub="reponse">زموږ ځواب</a>
+            <a href="#modele" data-sub="modele">بودیجه او تمویل</a>
+            <a href="#impact" data-sub="impact">اداره او اغېز</a>
+            <a href="#etapes" data-sub="etapes">مهال‌وېش</a>
             <a href="#maisons" data-sub="maisons">په فرانسه کې کورونه</a>
             <a href="#presse" data-sub="presse">په رسنیو کې</a>
           </div>
@@ -361,8 +379,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     </nav>
     <div class="subnav is-hidden" id="subnav">
       <nav aria-label="د پاڼې برخې" class="subnav-track" id="subnav-track">
-        <a href="#pourquoi" data-spy="pourquoi" class="chip">ولې یو کور</a>
-        <a href="#etapes" data-spy="etapes" class="chip">موږ چېرته یو</a>
+        <a href="#pourquoi" data-spy="pourquoi" class="chip">اوسنی حالت</a>
+        <a href="#reponse" data-spy="reponse" class="chip">زموږ ځواب</a>
+        <a href="#modele" data-spy="modele" class="chip">بودیجه او تمویل</a>
+        <a href="#impact" data-spy="impact" class="chip">اداره او اغېز</a>
+        <a href="#etapes" data-spy="etapes" class="chip">مهال‌وېش</a>
         <a href="#maisons" data-spy="maisons" class="chip">په فرانسه کې کورونه</a>
         <a href="#presse" data-spy="presse" class="chip">په رسنیو کې</a>
       </nav>
@@ -378,8 +399,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
           <a href="index.html#rencontrer" class="mm-sub">له موږ سره ووینئ</a>
           <a href="index.html#faq" class="mm-sub">پوښتنې</a>
           <a href="#top" class="mm-title">پروژه</a>
-          <a href="#pourquoi" class="mm-sub">ولې یو کور</a>
-          <a href="#etapes" class="mm-sub">موږ چېرته یو</a>
+          <a href="#pourquoi" class="mm-sub">اوسنی حالت</a>
+          <a href="#reponse" class="mm-sub">زموږ ځواب</a>
+          <a href="#modele" class="mm-sub">بودیجه او تمویل</a>
+          <a href="#impact" class="mm-sub">اداره او اغېز</a>
+          <a href="#etapes" class="mm-sub">مهال‌وېش</a>
           <a href="#maisons" class="mm-sub">په فرانسه کې کورونه</a>
           <a href="#presse" class="mm-sub">په رسنیو کې</a>
           <a href="s-engager.html" class="mm-title">ګډون وکړئ</a>
@@ -401,16 +425,16 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 20px">
       <svg aria-hidden="true" class="page-house" viewBox="0 0 200 160" fill="none"><path class="mdl-house" pathLength="1" filter="url(#mdl-chalk)" vector-effect="non-scaling-stroke" d="M30 70 10 70 100 10 132 34 132 18 152 18 152 48 190 70 170 70 170 150 30 150Z" stroke="#1211CA" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"></path></svg>
       <p class="eyebrow mdl-in p1"><span>پروژه</span></p>
-      <h1 class="mdl-in p2" style="margin: 0; max-width: 880px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.03; letter-spacing: -.025em">د ستراسبورګ د رسوونکو لپاره یو کور، چې د هغوی سره یوځای جوړېږي.</h1>
-      <p class="mdl-in p3" style="margin: 0; max-width: 640px; font-size: 20px; color: #4A4A5E">ولې دا ځای، پروژه چېرته رسېدلې، هغه کورونه چې موږ ته الهام راکوي، او رسنۍ څه وايي.</p>
-      <div class="grp-links mdl-in p4"><a href="#pourquoi">ولې یو کور</a><a href="#etapes">موږ چېرته یو</a><a href="#maisons">په فرانسه کې کورونه</a><a href="#presse">په رسنیو کې</a></div>
+      <h1 class="mdl-in p2" style="margin: 0; max-width: 900px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.03; letter-spacing: -.025em">د اپلیکیشن رسوونکو لپاره د سرچینو ځای، چې له دوی سره جوړېږي.</h1>
+      <p class="mdl-in p3" style="margin: 0; max-width: 700px; font-size: 20px; color: #4A4A5E">د ستراسبورګ یوه ټولنه چې د 2026 په سپتمبر کې ثبت شوه، Labo des partenariats یې ملاتړ کوي او د رسوونکو د کورونو د ملي شبکې غړې ده. د ځای د پرانیستلو موخه د 2027 مارچ ده.</p>
+      <div class="grp-links mdl-in p4"><a href="#pourquoi">اوسنی حالت</a><a href="#reponse">زموږ ځواب</a><a href="#modele">بودیجه او تمویل</a><a href="#impact">اداره او اغېز</a><a href="#etapes">مهال‌وېش</a><a href="#maisons">په فرانسه کې کورونه</a><a href="#presse">په رسنیو کې</a></div>
     </div>
   </section>
 
   <!-- ===== POURQUOI ===== -->
   <section id="pourquoi" class="sec">
     <div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
-      <p class="eyebrow mdl-reveal"><span>ولې یو کور؟</span></p>
+      <p class="eyebrow mdl-reveal"><span>اوسنی حالت</span></p>
       <p class="mdl-fill" style="margin: 0; max-width: 1040px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(28px, 4vw, 54px); line-height: 1.14; letter-spacing: -.02em">دوی په هر موسم کې، د اونۍ اووه ورځې زموږ خواړه رسوي. د دوو فرمایشونو ترمنځ هېڅ ځای نه لري چې پناه واخلي، دمه وکړي یا یې څوک واوري. نو موږ له دوی سره یو کور جوړوو چې د دوی خپل وي.</p>
       <div style="display: flex; flex-direction: column; gap: 28px">
         <p class="mdl-reveal" style="margin: 0; font-size: 15px; font-weight: 700; color: #5E5E72">د SANTÉ-COURSE څېړنې موندنې</p>
@@ -434,14 +458,171 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         </div>
         <p style="margin: 0; font-size: 15px; color: #5E5E72"><span>سرچینه:</span> <a href="https://www.medecinsdumonde.org/app/uploads/2026/03/Rapport_SANTE-COURSE.pdf" target="_blank" rel="noopener" style="font-weight: 700">د SANTÉ-COURSE راپور</a><span>، Médecins du Monde · IRD · INED (2026)، په پاریس او بوردو کې له 1000 څخه زیاتو رسوونکو سره سروې.</span></p>
       </div>
+      <div class="split mdl-reveal" style="align-items: start">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(26px, 3vw, 38px); line-height: 1.1">او په ستراسبورګ کې؟</h2>
+          <ul style="margin: 0; padding-inline-start: 22px; display: flex; flex-direction: column; gap: 10px; color: #4A4A5E">
+            <li>د ستراسبورګ په لوی ښار کې څو زره د رسوونکو حسابونه فعال دي، خو هېڅ ځای ورته ځانګړی نه دی.</li>
+            <li>ډېری یې د ښار په لومړیتوب لرونکو ګاونډیو کې اوسېږي: نویهوف، ماینو، کونیګسهوفن، روټرډام، سیټاډل…</li>
+            <li>ځینې رسوونکي له اپلیکیشنونو څخه شړل کېږي، که څه هم د اوسېدو د اجازې د نوي کولو معتبره رسید لري: یوه شپه کې یې ټول عاید له منځه ځي.</li>
+          </ul>
+        </div>
+        <div class="card-pad" style="padding: 28px; border-radius: 22px; background: #F5F6FC; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #1211CA">اصلي څېړنه</p>
+          <p style="margin: 0; color: #4A4A5E">د SANTÉ-COURSE سروې له 1004 رسوونکو سره مخامخ، په پنځو ژبو مرکې وکړې. د پاریس او بوردو د رسوونکو کورونه یې شریکان وو. له لسو څخه نږدې شپږ رسوونکي وايي چې په کار کې له تبعیض سره مخ شوي دي.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== ÉTAPES ===== -->
-  <section id="etapes" class="sec sec-green">
+  <!-- ===== NOTRE RÉPONSE ===== -->
+  <section id="reponse" class="sec sec-blue">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+      <div class="head mdl-reveal">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+          <p class="eyebrow"><span>زموږ ځواب</span></p>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">یو ځای، شپږ دندې، متخصص شریکان.</h2>
+        </div>
+        <p style="flex: 1 1 320px; margin: 0; max-width: 440px; color: #4A4A5E">ټولو رسوونکو ته پرانیستی، هر اپلیکیشن چې وي، وړیا او بې شرطه. هر څوک پکې سرپناه، ځوابونه او د عمل ځای مومي.</p>
+      </div>
+      <div class="g3">
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">01</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">هرکلی</h3>
+          <p style="margin: 0; color: #4A4A5E">د دمې او ګډ وخت ځای: کافي، تشناب، د ټیلیفونونو او بیټریو چارج، د رسولو له وختونو سره برابر ساعتونه.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">02</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">حقونو ته لاسرسی</h3>
+          <p style="margin: 0; color: #4A4A5E">اداري کارونه، د حساب بندېدل، ډیجیټل اسناد، له Reconnect او د هغه ډیجیټل صندوق سره.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">03</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">د خپلې روغتیا پاملرنه</h3>
+          <p style="margin: 0; color: #4A4A5E">روغتیايي ناستې او ژباړه له Migrations Santé Alsace سره، چې ډله او رضاکاران هم روزي.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">04</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">فرانسوي ویل، راتلونکی ګام موندل</h3>
+          <p style="margin: 0; color: #4A4A5E">د فرانسوي تمرین او کار او زده‌کړې ته لارښوونه له Tunaweza سره.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">05</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">جوړول او په خوندي ډول چلول</h3>
+          <p style="margin: 0; color: #4A4A5E">د برقي بایسکلونو لپاره د ځان‌جوړونې ورکشاپ، او د سړک خوندیتوب.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">06</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">پوهاوی او خبرتیا</h3>
+          <p style="margin: 0; color: #4A4A5E">د رستورانتونو لپاره منشور، فلمي بحثونه، د ډګر معلومات او له ملي شبکې سره مدافعه.</p>
+        </article>
+      </div>
+      <div class="facts">
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">100</span><span style="color: #4A4A5E; font-size: 16px">رسوونکي په لومړي کال کې (موخه)</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">1 → 2</span><span style="color: #4A4A5E; font-size: 16px">معاش لرونکې دندې د 2027 او 2029 ترمنځ</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">10</span><span style="color: #4A4A5E; font-size: 16px">رضاکاران چې دمخه ګډون لري</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">3</span><span style="color: #4A4A5E; font-size: 16px">متخصص شریکان له تړون سره</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUDGET ET FINANCEMENT ===== -->
+  <section id="modele" class="sec">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 44px">
+      <div class="head mdl-reveal">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+          <p class="eyebrow"><span>بودیجه او تمویل</span></p>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">ساده بودیجه، بېلابېل تمویل.</h2>
+        </div>
+        <p style="flex: 1 1 320px; margin: 0; max-width: 440px; color: #4A4A5E">د رسوونکو لپاره هرکلی وړیا پاتې کېږي. پروژه په بنسټونو، عامه مرستو، سپانسرشپ او ورو ورو په خپلو عوایدو تکیه کوي.</p>
+      </div>
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">د 2027-2029 اټکلي بودیجه</h3>
+        <div class="budget-wrap">
+          <table class="budget">
+            <caption class="sr">د پروژې اټکلي بودیجه، په یورو، د کال له مخې</caption>
+            <thead><tr><th scope="col">لګښتونه</th><th scope="col">2027</th><th scope="col">2028</th><th scope="col">2029</th><th scope="col">ټولټال</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">معاشونه (1، بیا 1.5، بیا 2 بشپړ وخت*)</th><td>41&#160;500&#160;€</td><td>62&#160;250&#160;€</td><td>83&#160;000&#160;€</td><td>186&#160;750&#160;€</td></tr>
+              <tr><th scope="row">کرایه، لګښتونه او بیمه</th><td>25&#160;900&#160;€</td><td>31&#160;200&#160;€</td><td>33&#160;300&#160;€</td><td>90&#160;400&#160;€</td></tr>
+              <tr><th scope="row">له شریکانو سره تړونونه</th><td>20&#160;000&#160;€</td><td>20&#160;000&#160;€</td><td>20&#160;000&#160;€</td><td>60&#160;000&#160;€</td></tr>
+              <tr><th scope="row">مصرفي توکي، ورکشاپ، انرژي، زېرمه</th><td>16&#160;700&#160;€</td><td>19&#160;900&#160;€</td><td>21&#160;200&#160;€</td><td>57&#160;800&#160;€</td></tr>
+              <tr><th scope="row">اړیکې، مدافعه، سفرونه</th><td>15&#160;600&#160;€</td><td>16&#160;600&#160;€</td><td>18&#160;200&#160;€</td><td>50&#160;400&#160;€</td></tr>
+              <tr><th scope="row">پانګونه: جوړښت، فرنیچر، وسایل</th><td>46&#160;000&#160;€</td><td>6&#160;000&#160;€</td><td>6&#160;000&#160;€</td><td>58&#160;000&#160;€</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">د پروژې ټولټال</th><td>165&#160;700&#160;€</td><td>155&#160;950&#160;€</td><td>181&#160;700&#160;€</td><td>503&#160;350&#160;€</td></tr></tfoot>
+          </table>
+        </div>
+        <p class="mob-only" style="margin: 0; font-size: 14px; font-weight: 700; color: #1211CA">د ټولو کلونو لیدو لپاره جدول وښویوئ.</p>
+        <p style="margin: 0; font-size: 15px; color: #5E5E72">* بشپړ وخت معادل. بودیجه هر کال متوازنه ده او د 2026 په سپتمبر کې Fondation de France ته وړاندې شوه. په 2027 کې د ځای جوړول شامل دي.</p>
+      </div>
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">د تمویل پلان</h3>
+        <div class="g2">
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">بنسټونه</h3>
+          <p style="margin: 0; color: #4A4A5E">له Fondation de France څخه د درېیو کلونو لپاره په کال کې 50000 یورو غوښتل شوي. له نورو شرکتي بنسټونو سره هم اړیکه نیول کېږي.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">سیمه‌ییزې ادارې او دولت</h3>
+          <p style="margin: 0; color: #4A4A5E">د ښار تړون 2027 (دولت او Eurométropole)، ښار او Eurométropole د ټولنیز او پیوستون اقتصاد له لارې، د الزاس اروپايي ټولنه، FDVA.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">خپل عواید</h3>
+          <p style="margin: 0; color: #4A4A5E">غړیتوب، د ټولو لپاره د بایسکل ورکشاپ په پیوستون بیو، بیا روزنې: یوه برخه چې هر کال لویېږي.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">جنسي مرستې</h3>
+          <p style="margin: 0; color: #4A4A5E">رضاکاري کار، په پور ورکړل شوي تالارونه، د وسایلو بسپنه: په درېیو کلونو کې 100000 یورو ارزښت لرونکې مرستې، له بودیجې پرته.</p>
+        </article>
+        </div>
+      </div>
+      <div class="pill-note mdl-reveal">
+        <span aria-hidden="true" style="flex: 0 0 34px; width: 34px; height: 34px; border-radius: 50%; background: #F8B014; color: #14142B; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800">!</span>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <p style="margin: 0; font-weight: 700">تمویل په کوم حال کې دی؟ (اکتوبر 2026)</p>
+          <p style="margin: 0; color: #4A4A5E">تر اوسه هېڅ تمویل نه دی ترلاسه شوی. استخدام او د ځای پرانیستل د کال تر پایه پورې په تمه ځوابونو پورې تړلي دي. تر هغه وخته رضاکاره ډله چمتووالی ته دوام ورکوي: ثابت لګښتونه یوازې له پرانیستلو سره پیلېږي.</p>
+        </div>
+      </div>
+      <p class="mdl-reveal" style="margin: 0; max-width: 820px; color: #4A4A5E"><strong>زموږ قاعده:</strong> هره سرچینه چې له یوه اپلیکیشن یا شرکت څخه راځي د اخلاقي منشور تابع ده، پرته له تبلیغاتي بدل او زموږ په کارونو کې د مداخلې حق.</p>
+      <a href="mailto:lamaisondeslivreurs.strasbourg@gmail.com?subject=Dossier%20de%20pr%C3%A9sentation" class="mdl-btn mdl-reveal" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #1211CA; color: #FFFFFF; font-weight: 700; text-decoration: none">زموږ د معرفي دوسیه ترلاسه کړئ</a>
+    </div>
+  </section>
+
+  <!-- ===== GOUVERNANCE ET IMPACT ===== -->
+  <section id="impact" class="sec sec-green">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 44px">
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+        <p class="eyebrow"><span>اداره او اغېز</span></p>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">له رسوونکو سره اداره کېږي، له شریکانو سره ارزول کېږي.</h2>
+      </div>
+      <div class="g2" style="gap: 18px">
+        <div class="card-pad mdl-reveal" style="padding: 32px; border-radius: 22px; background: #FFFFFF; border: 1px solid #CFE8DC; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">اداره</h3>
+          <p style="margin: 0; color: #3E4A44">د الزاس-موزل د سیمه‌ییز قانون له مخې ټولنه، د ستراسبورګ په محکمه کې ثبت شوې. یو ګډ دفتر او دوه رایه ورکوونکې ډلې: د رسوونکو ډله او د نورو غړو ډله. شریکې ادارې په یوه مشورتي ډله کې ناست دي.</p>
+          <p style="margin: 0; color: #3E4A44">Labo des partenariats یې ملاتړ کوي (د Start-Up de Territoire پروګرام)، له CoopCycle-Association او د رسوونکو د کورونو له ملي شبکې سره.</p>
+        </div>
+        <div class="card-pad mdl-reveal" style="padding: 32px; border-radius: 22px; background: #FFFFFF; border: 1px solid #CFE8DC; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">هغه څه چې موږ یې اندازه کوو</h3>
+          <ul style="margin: 0; padding-inline-start: 20px; display: flex; flex-direction: column; gap: 6px; color: #3E4A44">
+            <li>هغه رسوونکي چې هرکلی او ملاتړ یې شوی، د لومړیتوب لرونکو ګاونډیو د اوسېدونکو برخه پکې؛</li>
+            <li>د حقونو بریالي کارونه، درملنې، کار یا زده‌کړې ته لارښوونې؛</li>
+            <li>په ورکشاپ کې ترسره شوي ترمیمونه؛</li>
+            <li>هغه رسوونکي چې په پرېکړو او د ځای په چلولو کې برخه لري؛</li>
+            <li>روزل شوي رضاکاران او ورکړل شوي ساعتونه؛</li>
+            <li>هغه رستورانتونه چې منشور یې لاسلیک کړی او هغه کسان چې پوهاوی یې ترلاسه کړی.</li>
+          </ul>
+          <p style="margin: 0; color: #3E4A44">هر کال له رسوونکو، شریکانو او تمویلوونکو سره ګډه ارزونه. شمېرې د شبکې مدافعې ته هم مرسته کوي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALENDRIER ===== -->
+  <section id="etapes" class="sec">
     <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 56px">
       <div class="mdl-reveal" style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 18px">
-        <p class="eyebrow"><span>موږ چېرته یو؟</span></p>
+        <p class="eyebrow"><span>مهال‌وېش</span></p>
         <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 54px); line-height: 1.04; letter-spacing: -.02em">کور دمخه خښته په خښته جوړېږي.</h2>
         <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-top: 10px">
           <div>
@@ -463,12 +644,17 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">سپتمبر 2026</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د ستراسبورګ د ټولنو په ثبت کې نوم لیکنه</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د ټولنو په راجستر کې ثبت او Fondation de France ته د دوسیې سپارل</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">سپتمبر – اکتوبر 2026</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د رسوونکو لومړنۍ کافې</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د رسوونکو لومړۍ درې کافې</p>
+        </li>
+        <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
+          <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">نومبر 2026</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د ښار تړون 2027 ته غوښتنه او د Fondation de France د ځواب تمه</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
@@ -478,12 +664,12 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">جنوري 2027</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د معاش لرونکي همغږي کوونکي راتګ</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">د همغږي کوونکي استخدام، که تمویل تایید شي</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 0 30px">
           <span aria-hidden="true" class="tl-dot big" style="position: absolute; left: -12px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #F8B014; box-shadow: 0 0 0 5px rgba(248,176,20,.25)"></span>
-          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">پسرلی 2027</p>
-          <p style="margin: 2px 0 0; font-size: 24px; font-weight: 700">د ځای پرانیستل</p>
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">مارچ 2027</p>
+          <p style="margin: 2px 0 0; font-size: 24px; font-weight: 700">د ځای پرانیستل (موخه)</p>
         </li>
       </ol>
     </div>
@@ -657,7 +843,7 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     l.addEventListener('keydown',function(e){if(e.key==='Escape'){l.removeAttribute('open');l.querySelector('summary').focus();}});
   });
   var links=d.querySelectorAll('[data-spy],[data-sub]'), track=d.getElementById('subnav-track'), subnav=d.getElementById('subnav'), top=d.getElementById('totop');
-  var SECTIONS=["pourquoi", "etapes", "maisons", "presse"];
+  var SECTIONS=["pourquoi", "reponse", "modele", "impact", "etapes", "maisons", "presse"];
   function setActive(id){
     links.forEach(function(a){var on=(a.getAttribute('data-spy')||a.getAttribute('data-sub'))===id;a.classList.toggle('is-active',on);if(a.hasAttribute('data-spy')){if(on){a.setAttribute('aria-current','true');}else{a.removeAttribute('aria-current');}}});
     var chip=track&&track.querySelector('[data-spy="'+id+'"]');
