@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>المشروع — La Maison des Livreurs ستراسبورغ</title>
-<meta name="description" content="لماذا بيت لعمّال التوصيل في ستراسبورغ، ومراحل المشروع، والشبكة الوطنية للبيوت، وما نشرته الصحافة.">
+<meta name="description" content="الواقع، واستجابتنا، وميزانية 2027-2029، وخطة التمويل، والحوكمة، وأثر بيت عمّال التوصيل في ستراسبورغ.">
 <link rel="canonical" href="https://maisondeslivreurs-strasbourg.github.io/ar/le-projet.html">
 <link rel="alternate" hreflang="fr" href="https://maisondeslivreurs-strasbourg.github.io/le-projet.html">
 <link rel="alternate" hreflang="en" href="https://maisondeslivreurs-strasbourg.github.io/en/le-projet.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:title" content="المشروع — La Maison des Livreurs ستراسبورغ">
-<meta property="og:description" content="لماذا بيت لعمّال التوصيل في ستراسبورغ، ومراحل المشروع، والشبكة الوطنية للبيوت، وما نشرته الصحافة.">
+<meta property="og:description" content="الواقع، واستجابتنا، وميزانية 2027-2029، وخطة التمويل، والحوكمة، وأثر بيت عمّال التوصيل في ستراسبورغ.">
 <meta property="og:url" content="https://maisondeslivreurs-strasbourg.github.io/ar/le-projet.html">
 <meta property="og:image" content="https://maisondeslivreurs-strasbourg.github.io/logo-mdl.png">
 <meta name="theme-color" content="#1211CA">
@@ -288,6 +288,22 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
   .teaser{padding:26px}
 }
 [dir="rtl"] .page-house{right:auto;left:0}
+/* v8 : page projet (budget, chiffres clés) */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.fact{padding:22px 24px;border-radius:18px;background:#FFFFFF;border:1px solid #E2E4F2;display:flex;flex-direction:column;gap:6px}
+.budget-wrap{overflow-x:auto;border:1px solid #E2E4F2;border-radius:18px;background:#FFFFFF}
+.budget{width:100%;min-width:660px;border-collapse:collapse;font-size:16px}
+.budget th,.budget td{padding:13px 18px;text-align:end;border-bottom:1px solid #ECECF2;white-space:nowrap;font-variant-numeric:tabular-nums}
+.budget th[scope="row"],.budget thead th:first-child{text-align:start;white-space:normal;font-weight:400}
+.budget thead th{background:#F5F6FC;font-weight:700;font-size:15px;color:#4A4A5E}
+.budget tfoot th,.budget tfoot td{font-weight:800;background:#1211CA;color:#FFFFFF;border-bottom:0}
+.budget tfoot th[scope="row"]{font-weight:800}
+.pill-note{display:flex;gap:14px;align-items:flex-start;padding:22px 24px;border-radius:18px;background:#FFF6E0;border:1px solid #F8D98A}
+  .mob-only{display:none}
+[dir="rtl"] .budget td{direction:ltr;text-align:left}
+@media (max-width: 640px){.mob-only{display:block}}
+@media (max-width: 1024px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width: 640px){.fact{padding:18px}.budget{font-size:15px}}
 
 [hidden]{display:none !important}
 .tab{min-height:46px;padding:0 22px;border:0;border-radius:999px;background:transparent;color:#4A4A5E;font:inherit;font-weight:700;cursor:pointer}
@@ -316,8 +332,7 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     <div class="mdl-progress" aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: #F8B014"></div>
     <nav aria-label="التنقل الرئيسي" class="wrap" style="padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
       <a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #14142B; text-decoration: none">
-        <img src="../logo-mdl.png" alt="شعار La Maison des Livreurs ستراسبورغ" style="width: 48px; height: 48px; display: block">
-        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 17px; line-height: 1.1">La Maison<br>des Livreurs</span>
+        <img src="../logo-mdl-horizontal.svg" alt="شعار La Maison des Livreurs ستراسبورغ" width="156" height="46" style="height: 46px; width: auto; display: block">
       </a>
       <div class="navlinks" style="align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
         <div class="dd">
@@ -333,8 +348,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <div class="dd">
           <a href="#top" class="mdl-navlink is-current" aria-current="page"><span>المشروع</span><svg aria-hidden="true" class="dd-ico" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.5 6 8l3.5-3.5"></path></svg></a>
           <div class="dd-menu">
-            <a href="#pourquoi" data-sub="pourquoi">لماذا بيت</a>
-            <a href="#etapes" data-sub="etapes">أين وصلنا</a>
+            <a href="#pourquoi" data-sub="pourquoi">الواقع</a>
+            <a href="#reponse" data-sub="reponse">استجابتنا</a>
+            <a href="#modele" data-sub="modele">الميزانية والتمويل</a>
+            <a href="#impact" data-sub="impact">الحوكمة والأثر</a>
+            <a href="#etapes" data-sub="etapes">الجدول الزمني</a>
             <a href="#maisons" data-sub="maisons">البيوت في فرنسا</a>
             <a href="#presse" data-sub="presse">في الصحافة</a>
           </div>
@@ -361,8 +379,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     </nav>
     <div class="subnav is-hidden" id="subnav">
       <nav aria-label="أقسام الصفحة" class="subnav-track" id="subnav-track">
-        <a href="#pourquoi" data-spy="pourquoi" class="chip">لماذا بيت</a>
-        <a href="#etapes" data-spy="etapes" class="chip">أين وصلنا</a>
+        <a href="#pourquoi" data-spy="pourquoi" class="chip">الواقع</a>
+        <a href="#reponse" data-spy="reponse" class="chip">استجابتنا</a>
+        <a href="#modele" data-spy="modele" class="chip">الميزانية والتمويل</a>
+        <a href="#impact" data-spy="impact" class="chip">الحوكمة والأثر</a>
+        <a href="#etapes" data-spy="etapes" class="chip">الجدول الزمني</a>
         <a href="#maisons" data-spy="maisons" class="chip">البيوت في فرنسا</a>
         <a href="#presse" data-spy="presse" class="chip">في الصحافة</a>
       </nav>
@@ -378,8 +399,11 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
           <a href="index.html#rencontrer" class="mm-sub">تعال للقائنا</a>
           <a href="index.html#faq" class="mm-sub">أسئلة</a>
           <a href="#top" class="mm-title">المشروع</a>
-          <a href="#pourquoi" class="mm-sub">لماذا بيت</a>
-          <a href="#etapes" class="mm-sub">أين وصلنا</a>
+          <a href="#pourquoi" class="mm-sub">الواقع</a>
+          <a href="#reponse" class="mm-sub">استجابتنا</a>
+          <a href="#modele" class="mm-sub">الميزانية والتمويل</a>
+          <a href="#impact" class="mm-sub">الحوكمة والأثر</a>
+          <a href="#etapes" class="mm-sub">الجدول الزمني</a>
           <a href="#maisons" class="mm-sub">البيوت في فرنسا</a>
           <a href="#presse" class="mm-sub">في الصحافة</a>
           <a href="s-engager.html" class="mm-title">شارك</a>
@@ -401,16 +425,16 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     <div class="wrap" style="position: relative; display: flex; flex-direction: column; gap: 20px">
       <svg aria-hidden="true" class="page-house" viewBox="0 0 200 160" fill="none"><path class="mdl-house" pathLength="1" filter="url(#mdl-chalk)" vector-effect="non-scaling-stroke" d="M30 70 10 70 100 10 132 34 132 18 152 18 152 48 190 70 170 70 170 150 30 150Z" stroke="#1211CA" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"></path></svg>
       <p class="eyebrow mdl-in p1"><span>المشروع</span></p>
-      <h1 class="mdl-in p2" style="margin: 0; max-width: 880px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.03; letter-spacing: -.025em">بيت لعمّال التوصيل في ستراسبورغ، نبنيه معهم.</h1>
-      <p class="mdl-in p3" style="margin: 0; max-width: 640px; font-size: 20px; color: #4A4A5E">لماذا هذا المكان، وأين وصل المشروع، والبيوت التي تلهمنا، وما تقوله الصحافة.</p>
-      <div class="grp-links mdl-in p4"><a href="#pourquoi">لماذا بيت</a><a href="#etapes">أين وصلنا</a><a href="#maisons">البيوت في فرنسا</a><a href="#presse">في الصحافة</a></div>
+      <h1 class="mdl-in p2" style="margin: 0; max-width: 900px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 5.4vw, 72px); line-height: 1.03; letter-spacing: -.025em">مكان مرجعي لعمّال التوصيل عبر التطبيقات، يُبنى معهم.</h1>
+      <p class="mdl-in p3" style="margin: 0; max-width: 700px; font-size: 20px; color: #4A4A5E">جمعية في ستراسبورغ مسجّلة في سبتمبر 2026، يرافقها Labo des partenariats، وعضو في الشبكة الوطنية لبيوت عمّال التوصيل. الهدف افتتاح المكان في مارس 2027.</p>
+      <div class="grp-links mdl-in p4"><a href="#pourquoi">الواقع</a><a href="#reponse">استجابتنا</a><a href="#modele">الميزانية والتمويل</a><a href="#impact">الحوكمة والأثر</a><a href="#etapes">الجدول الزمني</a><a href="#maisons">البيوت في فرنسا</a><a href="#presse">في الصحافة</a></div>
     </div>
   </section>
 
   <!-- ===== POURQUOI ===== -->
   <section id="pourquoi" class="sec">
     <div class="wrap" style="display: flex; flex-direction: column; gap: 56px">
-      <p class="eyebrow mdl-reveal"><span>لماذا بيت؟</span></p>
+      <p class="eyebrow mdl-reveal"><span>الواقع</span></p>
       <p class="mdl-fill" style="margin: 0; max-width: 1040px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(28px, 4vw, 54px); line-height: 1.14; letter-spacing: -.02em">يوصلون وجباتنا في كل الأحوال الجوية، سبعة أيام في الأسبوع. وبين طلبين، لا مكان لهم يحتمون فيه أو يستريحون أو يجدون من يصغي إليهم. لذلك نبني معهم بيتاً يكون لهم.</p>
       <div style="display: flex; flex-direction: column; gap: 28px">
         <p class="mdl-reveal" style="margin: 0; font-size: 15px; font-weight: 700; color: #5E5E72">ما تكشفه دراسة SANTÉ-COURSE</p>
@@ -434,14 +458,171 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         </div>
         <p style="margin: 0; font-size: 15px; color: #5E5E72"><span>المصدر:</span> <a href="https://www.medecinsdumonde.org/app/uploads/2026/03/Rapport_SANTE-COURSE.pdf" target="_blank" rel="noopener" style="font-weight: 700">تقرير SANTÉ-COURSE</a><span>، أطباء العالم · IRD · INED (2026)، دراسة شملت أكثر من 1000 عامل توصيل في باريس وبوردو.</span></p>
       </div>
+      <div class="split mdl-reveal" style="align-items: start">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(26px, 3vw, 38px); line-height: 1.1">وفي ستراسبورغ؟</h2>
+          <ul style="margin: 0; padding-inline-start: 22px; display: flex; flex-direction: column; gap: 10px; color: #4A4A5E">
+            <li>آلاف الحسابات لعمّال التوصيل نشطة في منطقة ستراسبورغ الكبرى، ولا يوجد أي مكان مخصّص لهم.</li>
+            <li>يسكن كثير منهم في الأحياء ذات الأولوية في سياسة المدينة: نويهوف، مايناو، كونيغسهوفن، روتردام، سيتاديل…</li>
+            <li>يُفصل بعض عمّال التوصيل من المنصات رغم امتلاكهم إيصالاً صالحاً لتجديد تصريح الإقامة: بين ليلة وضحاها، لا دخل على الإطلاق.</li>
+          </ul>
+        </div>
+        <div class="card-pad" style="padding: 28px; border-radius: 22px; background: #F5F6FC; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #1211CA">الدراسة المرجعية</p>
+          <p style="margin: 0; color: #4A4A5E">شمل استطلاع SANTÉ-COURSE مقابلات مباشرة مع 1004 من عمّال التوصيل بخمس لغات، بشراكة مع بيتي عمّال التوصيل في باريس وبوردو. ويصرّح قرابة ستة من كل عشرة بأنهم تعرّضوا للتمييز في العمل.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== ÉTAPES ===== -->
-  <section id="etapes" class="sec sec-green">
+  <!-- ===== NOTRE RÉPONSE ===== -->
+  <section id="reponse" class="sec sec-blue">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 48px">
+      <div class="head mdl-reveal">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+          <p class="eyebrow"><span>استجابتنا</span></p>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">مكان واحد، ست مهام، وشركاء متخصصون.</h2>
+        </div>
+        <p style="flex: 1 1 320px; margin: 0; max-width: 440px; color: #4A4A5E">مفتوح لجميع عمّال التوصيل أيًّا كانت المنصة، مجاناً ودون شروط. يجد فيه كل واحد مأوى وأجوبة ومكاناً للمبادرة.</p>
+      </div>
+      <div class="g3">
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">01</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">الاستقبال</h3>
+          <p style="margin: 0; color: #4A4A5E">فضاء للراحة واللقاء: قهوة، دورات مياه، شحن الهواتف والبطاريات، بمواعيد تتلاءم مع أوقات التوصيل.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">02</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">الوصول إلى الحقوق</h3>
+          <p style="margin: 0; color: #4A4A5E">الإجراءات الإدارية، إيقاف الحسابات، الوثائق الرقمية، مع Reconnect وخزنته الرقمية.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">03</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">الاعتناء بصحتك</h3>
+          <p style="margin: 0; color: #4A4A5E">مداومات صحية وترجمة مع Migrations Santé Alsace، التي تكوّن أيضاً الفريق والمتطوعين.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">04</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">التحدث بالفرنسية وإيجاد الخطوة التالية</h3>
+          <p style="margin: 0; color: #4A4A5E">ممارسة اللغة الفرنسية والتوجيه نحو العمل والتكوين مع Tunaweza.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">05</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">الإصلاح والقيادة بأمان</h3>
+          <p style="margin: 0; color: #4A4A5E">ورشة إصلاح ذاتي ملائمة للدراجات الكهربائية، وتوعية بالسلامة على الطريق.</p>
+        </article>
+        <article class="mdl-reveal mdl-card" style="padding: 28px; border-radius: 22px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <span aria-hidden="true" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #1211CA">06</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.15">التوعية والتنبيه</h3>
+          <p style="margin: 0; color: #4A4A5E">ميثاق للمطاعم، ونقاشات بعد عروض سينمائية، وبيانات ميدانية، ومناصرة بالتعاون مع الشبكة الوطنية.</p>
+        </article>
+      </div>
+      <div class="facts">
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">100</span><span style="color: #4A4A5E; font-size: 16px">عامل توصيل يُستقبَلون في السنة الأولى (هدف)</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">1 → 2</span><span style="color: #4A4A5E; font-size: 16px">وظائف مأجورة بين 2027 و2029</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">10</span><span style="color: #4A4A5E; font-size: 16px">متطوعون ملتزمون بالفعل</span></div>
+        <div class="fact mdl-reveal"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 38px; line-height: 1.05; color: #1211CA" dir="ltr">3</span><span style="color: #4A4A5E; font-size: 16px">شركاء متخصصون باتفاقيات</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUDGET ET FINANCEMENT ===== -->
+  <section id="modele" class="sec">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 44px">
+      <div class="head mdl-reveal">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 16px">
+          <p class="eyebrow"><span>الميزانية والتمويل</span></p>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">ميزانية مقتصدة وتمويل متنوّع.</h2>
+        </div>
+        <p style="flex: 1 1 320px; margin: 0; max-width: 440px; color: #4A4A5E">يبقى الاستقبال مجانياً لعمّال التوصيل. يعتمد المشروع على المؤسسات والمنح العامة والرعاية، ثم تدريجياً على موارد ذاتية.</p>
+      </div>
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 12px">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">الميزانية التقديرية 2027-2029</h3>
+        <div class="budget-wrap">
+          <table class="budget">
+            <caption class="sr">الميزانية التقديرية للمشروع باليورو حسب السنة</caption>
+            <thead><tr><th scope="col">المصاريف</th><th scope="col">2027</th><th scope="col">2028</th><th scope="col">2029</th><th scope="col">المجموع</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">الأجور (1 ثم 1.5 ثم 2 منصب بدوام كامل*)</th><td>41&#160;500&#160;€</td><td>62&#160;250&#160;€</td><td>83&#160;000&#160;€</td><td>186&#160;750&#160;€</td></tr>
+              <tr><th scope="row">الإيجار والأعباء والتأمين</th><td>25&#160;900&#160;€</td><td>31&#160;200&#160;€</td><td>33&#160;300&#160;€</td><td>90&#160;400&#160;€</td></tr>
+              <tr><th scope="row">اتفاقيات الشركاء</th><td>20&#160;000&#160;€</td><td>20&#160;000&#160;€</td><td>20&#160;000&#160;€</td><td>60&#160;000&#160;€</td></tr>
+              <tr><th scope="row">المستهلكات، الورشة، الطاقة، الاحتياطي</th><td>16&#160;700&#160;€</td><td>19&#160;900&#160;€</td><td>21&#160;200&#160;€</td><td>57&#160;800&#160;€</td></tr>
+              <tr><th scope="row">التواصل، المناصرة، التنقلات</th><td>15&#160;600&#160;€</td><td>16&#160;600&#160;€</td><td>18&#160;200&#160;€</td><td>50&#160;400&#160;€</td></tr>
+              <tr><th scope="row">الاستثمار: التهيئة والأثاث والأدوات</th><td>46&#160;000&#160;€</td><td>6&#160;000&#160;€</td><td>6&#160;000&#160;€</td><td>58&#160;000&#160;€</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">مجموع المشروع</th><td>165&#160;700&#160;€</td><td>155&#160;950&#160;€</td><td>181&#160;700&#160;€</td><td>503&#160;350&#160;€</td></tr></tfoot>
+          </table>
+        </div>
+        <p class="mob-only" style="margin: 0; font-size: 14px; font-weight: 700; color: #1211CA">اسحب الجدول لرؤية جميع السنوات.</p>
+        <p style="margin: 0; font-size: 15px; color: #5E5E72">* منصب بدوام كامل. ميزانية متوازنة كل سنة، قُدّمت إلى Fondation de France في سبتمبر 2026. تشمل سنة 2027 تهيئة المقر.</p>
+      </div>
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 14px">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">خطة التمويل</h3>
+        <div class="g2">
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">المؤسسات</h3>
+          <p style="margin: 0; color: #4A4A5E">طُلب من Fondation de France مبلغ 50000 يورو سنوياً على مدى ثلاث سنوات، ويجري التواصل مع مؤسسات شركات أخرى.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">الجماعات المحلية والدولة</h3>
+          <p style="margin: 0; color: #4A4A5E">عقد المدينة 2027 (الدولة والمتروبول الأوروبي)، المدينة والمتروبول في إطار الاقتصاد الاجتماعي والتضامني، الجماعة الأوروبية للألزاس، FDVA.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">الموارد الذاتية</h3>
+          <p style="margin: 0; color: #4A4A5E">الاشتراكات، ورشة دراجات بأسعار تضامنية مفتوحة للجميع، ثم التكوين: حصة تكبر كل سنة.</p>
+        </article>
+        <article class="mdl-reveal" style="padding: 26px; border-radius: 20px; border: 1px solid #E2E4F2; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px">المساهمات العينية</h3>
+          <p style="margin: 0; color: #4A4A5E">التطوع، إعارة القاعات، التبرع بالمعدات: مساهمات تُقدَّر بـ100000 يورو على ثلاث سنوات، إضافة إلى الميزانية.</p>
+        </article>
+        </div>
+      </div>
+      <div class="pill-note mdl-reveal">
+        <span aria-hidden="true" style="flex: 0 0 34px; width: 34px; height: 34px; border-radius: 50%; background: #F8B014; color: #14142B; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800">!</span>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <p style="margin: 0; font-weight: 700">أين وصل التمويل؟ (أكتوبر 2026)</p>
+          <p style="margin: 0; color: #4A4A5E">لم يُضمن أي تمويل حتى الآن. يتوقف التوظيف وافتتاح المكان على الردود المنتظرة قبل نهاية السنة. وفي الأثناء، يواصل الفريق التطوعي العمل التحضيري: لا تبدأ المصاريف الثابتة إلا عند الافتتاح.</p>
+        </div>
+      </div>
+      <p class="mdl-reveal" style="margin: 0; max-width: 820px; color: #4A4A5E"><strong>قاعدتنا:</strong> أي مورد يأتي من منصة أو شركة يخضع لميثاق أخلاقي، دون مقابل دعائي ولا حق في التدخل في أنشطتنا.</p>
+      <a href="mailto:lamaisondeslivreurs.strasbourg@gmail.com?subject=Dossier%20de%20pr%C3%A9sentation" class="mdl-btn mdl-reveal" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #1211CA; color: #FFFFFF; font-weight: 700; text-decoration: none">احصل على ملف التقديم</a>
+    </div>
+  </section>
+
+  <!-- ===== GOUVERNANCE ET IMPACT ===== -->
+  <section id="impact" class="sec sec-green">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 44px">
+      <div class="mdl-reveal" style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+        <p class="eyebrow"><span>الحوكمة والأثر</span></p>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.2vw, 58px); line-height: 1.04; letter-spacing: -.02em">تُدار مع عمّال التوصيل، وتُقيَّم مع شركائنا.</h2>
+      </div>
+      <div class="g2" style="gap: 18px">
+        <div class="card-pad mdl-reveal" style="padding: 32px; border-radius: 22px; background: #FFFFFF; border: 1px solid #CFE8DC; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">الحوكمة</h3>
+          <p style="margin: 0; color: #3E4A44">جمعية خاضعة للقانون المحلي للألزاس-موزيل، مسجّلة لدى محكمة ستراسبورغ. مكتب جماعي وهيئتان تصوّتان: هيئة عمّال التوصيل وهيئة باقي الأعضاء. وتجلس المنظمات الشريكة في هيئة استشارية.</p>
+          <p style="margin: 0; color: #3E4A44">يرافقها Labo des partenariats (برنامج Start-Up de Territoire)، بالتعاون مع CoopCycle-Association والشبكة الوطنية لبيوت عمّال التوصيل.</p>
+        </div>
+        <div class="card-pad mdl-reveal" style="padding: 32px; border-radius: 22px; background: #FFFFFF; border: 1px solid #CFE8DC; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px">ما نقيسه</h3>
+          <ul style="margin: 0; padding-inline-start: 20px; display: flex; flex-direction: column; gap: 6px; color: #3E4A44">
+            <li>عمّال التوصيل المستقبَلون والمرافَقون، ومنهم نسبة سكان الأحياء ذات الأولوية؛</li>
+            <li>إجراءات الوصول إلى الحقوق المنجزة، والتوجيه نحو العلاج أو العمل أو التكوين؛</li>
+            <li>الإصلاحات المنجزة في الورشة؛</li>
+            <li>عمّال التوصيل المشاركون في القرارات وفي تنشيط المكان؛</li>
+            <li>المتطوعون المكوَّنون والساعات الممنوحة؛</li>
+            <li>المطاعم الموقِّعة على الميثاق والأشخاص الذين شملتهم التوعية.</li>
+          </ul>
+          <p style="margin: 0; color: #3E4A44">حصيلة مشتركة كل سنة مع عمّال التوصيل والشركاء والممولين. وتغذّي الأرقام أيضاً مناصرة الشبكة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALENDRIER ===== -->
+  <section id="etapes" class="sec">
     <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 56px">
       <div class="mdl-reveal" style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 18px">
-        <p class="eyebrow"><span>أين وصلنا؟</span></p>
+        <p class="eyebrow"><span>الجدول الزمني</span></p>
         <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 54px); line-height: 1.04; letter-spacing: -.02em">البيت يُبنى منذ الآن، لبنةً لبنة.</h2>
         <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-top: 10px">
           <div>
@@ -463,12 +644,17 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">سبتمبر 2026</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">التسجيل في سجل الجمعيات بستراسبورغ</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">التسجيل في سجل الجمعيات وتقديم الملف إلى Fondation de France</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">سبتمبر – أكتوبر 2026</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">أولى مقاهي عمّال التوصيل</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">أول ثلاثة مقاهٍ لعمّال التوصيل</p>
+        </li>
+        <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
+          <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">نوفمبر 2026</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">طلب في إطار عقد المدينة 2027 وانتظار ردّ Fondation de France</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
@@ -478,12 +664,12 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
         <li class="mdl-reveal" style="position: relative; padding: 0 0 26px 30px">
           <span aria-hidden="true" class="tl-dot" style="position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 2px solid #15704F"></span>
           <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">يناير 2027</p>
-          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">التحاق منسّق بأجر بالفريق</p>
+          <p style="margin: 2px 0 0; font-size: 19px; font-weight: 700">توظيف منسّق/منسّقة إذا تأكّد التمويل</p>
         </li>
         <li class="mdl-reveal" style="position: relative; padding: 0 0 0 30px">
           <span aria-hidden="true" class="tl-dot big" style="position: absolute; left: -12px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #F8B014; box-shadow: 0 0 0 5px rgba(248,176,20,.25)"></span>
-          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">ربيع 2027</p>
-          <p style="margin: 2px 0 0; font-size: 24px; font-weight: 700">افتتاح المكان</p>
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: #3E4A44">مارس 2027</p>
+          <p style="margin: 2px 0 0; font-size: 24px; font-weight: 700">افتتاح المكان (هدف)</p>
         </li>
       </ol>
     </div>
@@ -657,7 +843,7 @@ section[id],footer[id],.grp[id]{scroll-margin-top:84px}
     l.addEventListener('keydown',function(e){if(e.key==='Escape'){l.removeAttribute('open');l.querySelector('summary').focus();}});
   });
   var links=d.querySelectorAll('[data-spy],[data-sub]'), track=d.getElementById('subnav-track'), subnav=d.getElementById('subnav'), top=d.getElementById('totop');
-  var SECTIONS=["pourquoi", "etapes", "maisons", "presse"];
+  var SECTIONS=["pourquoi", "reponse", "modele", "impact", "etapes", "maisons", "presse"];
   function setActive(id){
     links.forEach(function(a){var on=(a.getAttribute('data-spy')||a.getAttribute('data-sub'))===id;a.classList.toggle('is-active',on);if(a.hasAttribute('data-spy')){if(on){a.setAttribute('aria-current','true');}else{a.removeAttribute('aria-current');}}});
     var chip=track&&track.querySelector('[data-spy="'+id+'"]');
